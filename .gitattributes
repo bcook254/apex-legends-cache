@@ -1,0 +1,2 @@
+r5apex.dxvk-cache filter=lfs diff=lfs merge=lfs -text
+*.dxvk-cache filter=lfs diff=lfs merge=lfs -text
