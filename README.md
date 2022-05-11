@@ -54,11 +54,10 @@ Create a pull request on this repository __and make sure to include the number o
 [u/jumper775](https://www.reddit.com/u/jumper775/)  
 [u/Tiflotin](https://www.reddit.com/u/Tiflotin/)  
 [u/NineBallAYAYA](https://www.reddit.com/u/NineBallAYAYA/)  
-[u/najodleglejszy](https://www.reddit.com/u/najodleglejszy/)  
 [u/CaptainKrisss](https://www.reddit.com/u/CaptainKrisss/)  
 [u/Nik0ne](https://www.reddit.com/u/Nik0ne/)  
 [u/Tenshar](https://www.reddit.com/u/Tenshar/)  
-[u/-ThunderFox](https://www.reddit.com/u/-ThunderFox/)  
+[u/-ThunderFox](https://www.reddit.com/u/-ThunderFox/) - 3604 entries  
 [u/EpicCreeper713](https://www.reddit.com/u/EpicCreeper713/)  
 [u/Kitchen-Drop236](https://www.reddit.com/u/Kitchen-Drop236/)  
 [u/SneakySnk](https://www.reddit.com/u/SneakySnk/)  
