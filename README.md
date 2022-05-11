@@ -36,7 +36,7 @@ Add the new file, commit, and push to your repository.
     git commit -m "$(date +%s)"
     git push origin main
 
-Create a pull request on this repository __and make sure to include the number of new entries this request will add to the cache file!__
+Create a pull request on this repository __and make sure to include the number of new entries this request will add to the cache file! It will be cool to see the number of entries we can add over time!__
 
 ## Contributions
 ### Cache Files
