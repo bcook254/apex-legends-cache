@@ -41,7 +41,7 @@ Stage the new cache file, commit, and push to your repository.
     git commit -m "$(date +%s)"
     git push origin main
 
-Finally, create a pull request with this repository. __Include the number of new entries this request will add to the cache file!__ ⚠️ The final number of entries added may change if a previous pull request must be merged before merging your pull request. ⚠️
+Finally, create a pull request with this repository. __Include the number of new entries this request will add to the cache file!__ ⚠️ Please also allow edits from upstream maintainers. This allows me to merge pull requests that used an old version of the cache file without any back and forth, and will give you proper contributor credit. ⚠️ ⚠️ The final number of entries added may change if a previous pull request must be merged before merging your pull request. ⚠️
 
 ### Option 2 - Open an Issue
 Begin by downloading the most recent version of the cache file from this repository here, [r5apex.dxvk-cache file](https://github.com/bcook254/apex-legends-cache/blob/main/r5apex.dxvk-cache), or this [direct link](https://github.com/bcook254/apex-legends-cache/raw/main/r5apex.dxvk-cache).
