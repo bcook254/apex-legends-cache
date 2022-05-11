@@ -16,27 +16,47 @@ View the [r5apex.dxvk-cache file](https://github.com/bcook254/apex-legends-cache
 You could also clone this repository to your local machine and either manually or automatically pull each update and copy your local repository files to the same location listed above. This does require installing and setting up git and git-lfs for which there are many guides available online.
 
 ## Contributing cache files
-Fork this repository and clone it to your local machine. You will need git-lfs set up to track the cache file. Use the dxvk-cache-tool available [here](https://lutris.nyc3.cdn.digitaloceanspaces.com/games/overwatch/merge-tool.tar.xz) to combine the current [r5apex.dxvk-cache file](https://github.com/bcook254/apex-legends-cache/blob/main/r5apex.dxvk-cache) in the repository with your local r5apex.dxvk-cache file. __Create a new commit with a commit message containing the current unix timestamp.__ An example workflow might look something like this.
+As this is a new project, I am open to new ideas on how we can make this process easier and faster for contributors and maintainers. If you would like to propose new ideas or start a discussion around this, please open an issue.
 
-Copy your local cache file to the location of the repository cache file.
+### Option 1 - Make a Pull Request
+⚠️ This repository is using Git LFS to store the r5apex.dxvk-cache binary file. This helps to keep the repository size down as we manage a binary file. In order to contribute this way, __you MUST have Git LFS installed and set up on your local machine!__ Follow this guide, https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage, to install Git LFS. ⚠️
+
+First, create a fork of this repository in your GitHub account and clone your forked repository to your local machine.
+
+Next, copy your __local cache file__ in to your local repository. Assuming you are using the command line and are currently working out of your repository folder it might look something like this.
 
     cp ~/.local/share/Steam/steamapps/shadercache/1172470/DXVK_state_cache/r5apex.dxvk-cache ./r5apex-local.dxvk-cache
 
-Merge your repository cache file with your local cache file. __Make a note of the number of entries added by your file!__
+Merge the __current repositories cache file__ with your __local cache file__. Building off the previous command it should like something like this.
 
     dxvk-cache-tool ./r5apex.dxvk-cache ./r5apex-local.dxvk-cache
 
-Rename the output cache file.
+Now, rename the output cache file to the repository file name so it can be added to the commit.
 
     mv ./output.dxvk-cache ./r5apex.dxvk-cache
 
-Add the new file, commit, and push to your repository.
+Stage the new cache file, commit, and push to your repository.
 
     git add r5apex.dxvk-cache
     git commit -m "$(date +%s)"
     git push origin main
 
-Create a pull request on this repository __and make sure to include the number of new entries this request will add to the cache file! It will be cool to see the number of entries we can add over time!__
+Finally, create a pull request with this repository. __Include the number of new entries this request will add to the cache file!__ ⚠️ The final number of entries added may change if a previous pull request must be merged before merging your pull request. ⚠️
+
+### Option 2 - Open an Issue
+Begin by downloading the most recent version of the cache file from this repository here, [r5apex.dxvk-cache file](https://github.com/bcook254/apex-legends-cache/blob/main/r5apex.dxvk-cache), or this [direct link](https://github.com/bcook254/apex-legends-cache/raw/main/r5apex.dxvk-cache).
+
+Next, copy your __local cache file__ in to the same folder that contains that cache file you downloaded. Assuming you are using the command line and are currently working out of said folder it might look something like this.
+
+    cp ~/.local/share/Steam/steamapps/shadercache/1172470/DXVK_state_cache/r5apex.dxvk-cache ./r5apex-local.dxvk-cache
+
+Merge the __downloaded cache file__ with your __local cache file__. Building off the previous command it should like something like this.
+
+    dxvk-cache-tool ./r5apex.dxvk-cache ./r5apex-local.dxvk-cache
+
+Upload the `output.dxvk-cache` generated file to your preferred location and make a publicly accessible link for it.
+
+Open up an issue, making sure to use the __Cache File Entry__ issue template. You can also use this link, [Cache File Entry](https://github.com/bcook254/apex-legends-cache/issues/new?assignees=&labels=cache-entry&template=cache-file-entry.md&title=). __Please fill out the entire template! It makes it that much easier for me.__ ⚠️ The final number of entries added may change if a previous cache entry must be merged before merging your cache entry ⚠️
 
 ## Contributions
 ### Cache Files
