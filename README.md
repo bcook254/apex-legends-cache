@@ -23,6 +23,14 @@ As this is a new project, I am open to new ideas on how we can make this process
 
 First, create a fork of this repository in your GitHub account and clone your forked repository to your local machine.
 
+After cloning the repository to your local machine, don't forget to initialize __git-lfs__
+    
+    git-lfs install
+
+then do __git-lfs pull__ to pull the __r5apex.dxvk-cache__ from __git-lfs__
+    
+    git-lfs pull
+
 Next, copy your __local cache file__ in to your local repository. Assuming you are using the command line and are currently working out of your repository folder it might look something like this.
 
     cp ~/.local/share/Steam/steamapps/shadercache/1172470/DXVK_state_cache/r5apex.dxvk-cache ./r5apex-local.dxvk-cache
