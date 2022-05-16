@@ -1,15 +1,34 @@
 #!/bin/bash
 
-VERSION=0.0.1
+VERSION=0.0.2
 
 function echo_err {
     >&2 echo "$1"
 }
 
 function help {
-    echo "Usage:";
-    # TODO: Add usage instructions
-    exit 0;
+    echo -e "\e[1mUsage:\e[0m"
+    echo -e "  \e[1mmerge_local_cache_file.sh\e[0m [options]"
+    echo ""
+    echo -e "\e[1mMETA OPTIONS\e[0m"
+    echo -e "  \e[1m-h\e[0m, \e[1m--help\e[0m"
+    echo "      show list of command-line options"
+    echo ""
+    echo -e "  \e[1m-v\e[0m, \e[1m--version\e[0m"
+    echo "      show version of this script"
+    echo ""
+    echo -e "\e[1mOPTIONS\e[0m"
+    echo -e "  \e[1m--shader-cache-file\e[0m=\e[4mfile\e[0m (Required)"
+    echo "      the location of the local r5apex.dxvk-cache file"
+    echo "      default locations are:"
+    echo "        ~/.local/Steam/steamapps/shadercache/1172470/DXVK_state_cache/r5apex.dxvk-cache"
+    echo "        ~/.local/Steam/steamapps/common/Apex Legends/r5apex.dxvk-cache"
+    echo ""
+    echo -e "  \e[1m--repository-folder\e[0m=\e[4mfolder\e[0m (Optional; Default=./)"
+    echo "      the location of the cloned repo containing the r5apex.dxvk-cache file"
+    echo ""
+    echo -e "  \e[1m--output-file\e[0m=\e[4mfile\e[0m (Optional; Default=./r5apex.dxvk-cache)"
+    echo "      the output file created by dxvk-cache-tool"
 }
 
 function check_prereqs {
@@ -61,7 +80,7 @@ while [ $# -gt 0 ]; do
             ;;
         --repository-folder*)
             if [[ "$1" != *"="* ]]; then shift; fi # Value is next arg when '=' is missing
-            repository_folder_arg=$(echo "${1#*=}" | 's/\/*$//') # Remove all trailing '/'
+            repository_folder_arg=$(echo "${1#*=}" | sed 's/\/*$//') # Remove all trailing '/'
             ;;
         --output-file*)
             if [[ "$1" != *"="* ]]; then shift; fi # Value is next arg when '=' is missing
