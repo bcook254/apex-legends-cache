@@ -20,15 +20,17 @@ function help {
     echo -e "\e[1mOPTIONS\e[0m"
     echo -e "  \e[1m--shader-cache-file\e[0m=\e[4mfile\e[0m (Required)"
     echo "      the location of the local r5apex.dxvk-cache file"
-    echo "      default locations are:"
-    echo "        ~/.local/Steam/steamapps/shadercache/1172470/DXVK_state_cache/r5apex.dxvk-cache"
-    echo "        ~/.local/Steam/steamapps/common/Apex Legends/r5apex.dxvk-cache"
+    echo "      default locations include:"
+    echo "        \$HOME/.local/share/Steam/steamapps/shadercache/1172470/DXVK_state_cache/r5apex.dxvk-cache"
+    echo "        \$HOME/Steam/steamapps/common/Apex Legends/r5apex.dxvk-cache"
     echo ""
     echo -e "  \e[1m--repository-folder\e[0m=\e[4mfolder\e[0m (Optional; Default=./)"
     echo "      the location of the cloned repo containing the r5apex.dxvk-cache file"
     echo ""
     echo -e "  \e[1m--output-file\e[0m=\e[4mfile\e[0m (Optional; Default=./r5apex.dxvk-cache)"
     echo "      the output file created by dxvk-cache-tool"
+    echo ""
+    echo " For more information or help please visit https://github.com/bcook254/apex-legends-cache"
 }
 
 function check_prereqs {
@@ -117,3 +119,6 @@ check_prereqs
 check_files
 
 merge_cache_files
+
+echo -e "\e[1m$new_entries\e[0m new entries were found."
+echo -e "\e[1m$total_entries\e[0m total entries were written."
