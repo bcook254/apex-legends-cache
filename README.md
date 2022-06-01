@@ -59,6 +59,9 @@ Upload the `output.dxvk-cache` generated file to your preferred location and mak
 Open up an issue, making sure to use the __Cache File Entry__ issue template. You can also use this link, [Cache File Entry](https://github.com/bcook254/apex-legends-cache/issues/new?assignees=&labels=cache-entry&template=cache-file-entry.md&title=). __Please fill out the entire template! It makes it that much easier for me.__ ⚠️ The final number of entries added may change if a previous cache entry must be merged before merging your cache entry ⚠️
 
 ## Contributions
+### Other Projects
+[TheMethodicalJosh](https://github.com/TheMethodicalJosh) An automatic download script at [TheMethodicalJosh/apex-legends-cache-automated](https://github.com/TheMethodicalJosh/apex-legends-cache-automated)  
+
 ### Cache Files
 [u/ryao](https://www.reddit.com/u/ryao/) (original maintainer on r/linux_gaming)  
 [u/Melon__Bread](https://www.reddit.com/u/Melon__Bread/)  
