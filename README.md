@@ -89,7 +89,8 @@ Open up an issue, making sure to use the __Cache File Entry__ issue template. Yo
 [u/wanna_play_r5](https://www.reddit.com/u/wanna_play_r5/)  
 [u/baryluk](https://www.reddit.com/u/baryluk/)  
 [u/sP6awFXL94V6vH7C](https://www.reddit.com/u/sP6awFXL94V6vH7C/)  
-[cybersandwich](https://github.com/cybersandwich) - 88 entries  
+[@cybersandwich](https://github.com/cybersandwich) - 88 entries  
+[@codebam](https://github.com/codebam)
 
 ## Thank You!
 This would not be possible without everyone who originally contributed to this file when Apex Legends first supported Linux and could not continue to be possible without each contribution and user from the community.
