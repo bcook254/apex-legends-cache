@@ -11,39 +11,19 @@ Instead of each player having to drop in multiple times with unplayable renderin
 This effort was originally started by [u/ryao](https://www.reddit.com/user/ryao/) in this [r/linux\_gaming thread](https://www.reddit.com/r/linux_gaming/comments/t5xrho/dxvk_state_cache_for_fixing_stutter_in_apex/). This thread worked well for a while but will eventually get lost in the history of the subreddit and may not be easy to find, especially for new players. Additionally, the history of the cache file is not readily available and cannot be quickly reverted in the event of a bad merge. This repository will also add more transparency to each merge, make it easier to give credit to each contributed, and can be more easily forked/transferred should I or any future maintainers decide to stop working on this project.
 
 ## Using this file
-View the [r5apex.dxvk-cache file](https://github.com/bcook254/apex-legends-cache/blob/main/r5apex.dxvk-cache) in this repository and click the Download button in the top right hand corner. You can also use [this link](https://github.com/bcook254/apex-legends-cache/raw/main/r5apex.dxvk-cache) to directly download the file to your computer. Copy the downloaded file to your Apex Legends shadercache folder located at `/path/to/steamapps/shadercache/1172470/DXVK_state_cache/r5apex.dxvk-cache`. By default this location is `~/.local/share/Steam/steamapps/shadercache/1172470/DXVK_state_cache/r5apex.dxvk-cache`. That's it!
+View the [r5apex.dxvk-cache file](https://github.com/bcook254/apex-legends-cache/blob/main/r5apex.dxvk-cache) in this repository and click the Download button in the top right hand corner. You can also use [this link](https://github.com/bcook254/apex-legends-cache/raw/main/r5apex.dxvk-cache) to directly download the file to your computer. Copy the downloaded file to your Apex Legends shadercache folder located at `/path/to/steamapps/shadercache/1172470/DXVK_state_cache/r5apex.dxvk-cache`. By default this location is `~/.local/share/Steam/steamapps/shadercache/1172470/DXVK_state_cache/r5apex.dxvk-cache`.
 
 You could also clone this repository to your local machine and either manually or automatically pull each update and copy your local repository files to the same location listed above. This does require installing and setting up git and git-lfs for which there are many guides available online.
+
+Finally, Apex Legends __SHOULD__ be using a Proton compatibility tool that uses __dxvk 1.10.3 or later__. The current cache file uses v15 and no attempts will be made to support earlier versions. As of Aug 10, 2022, _Proton Experimental_ and _GE-Proton7-27_ or later are fully compatible.
 
 ## Contributing cache files
 As this is a new project, I am open to new ideas on how we can make this process easier and faster for contributors and maintainers. If you would like to propose new ideas or start a discussion around this, please open an issue.
 
-### Option 1 - Make a Pull Request
-⚠️ This repository is using Git LFS to store the r5apex.dxvk-cache binary file. This helps to keep the repository size down as we manage a binary file. In order to contribute this way, __you MUST have Git LFS installed and set up on your local machine!__ Follow this guide, https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage, to install Git LFS. ⚠️
+### ⚠️Important Information⚠️
+For some reason with each map change, Apex Legends no longer uses any of the previous state cache entries. This is leaving a lot of unused entries behind and creates a larger than necessary file. Therefore with each map change the current cache file will be reset and populated with new entries. This mean you __MUST__ delete your old state cache file and begin generating a new one. Submissions with old entries will be rejected if they contain these entries for the time being.
 
-First, create a fork of this repository in your GitHub account and clone your forked repository to your local machine.
-
-Next, copy your __local cache file__ in to your local repository. Assuming you are using the command line and are currently working out of your repository folder it might look something like this.
-
-    cp ~/.local/share/Steam/steamapps/shadercache/1172470/DXVK_state_cache/r5apex.dxvk-cache ./r5apex-local.dxvk-cache
-
-Merge the __current repositories cache file__ with your __local cache file__. Building off the previous command it should like something like this.
-
-    dxvk-cache-tool ./r5apex.dxvk-cache ./r5apex-local.dxvk-cache
-
-Now, rename the output cache file to the repository file name so it can be added to the commit.
-
-    mv ./output.dxvk-cache ./r5apex.dxvk-cache
-
-Stage the new cache file, commit, and push to your repository.
-
-    git add r5apex.dxvk-cache
-    git commit -m "$(date +%s)"
-    git push origin main
-
-Finally, create a pull request with this repository. __Include the number of new entries this request will add to the cache file!__ ⚠️ Please also allow edits from upstream maintainers. This allows me to merge pull requests that used an old version of the cache file without any back and forth, and will give you proper contributor credit. ⚠️ ⚠️ The final number of entries added may change if a previous pull request must be merged before merging your pull request. ⚠️
-
-### Option 2 - Open an Issue
+### Open an Issue
 Begin by downloading the most recent version of the cache file from this repository here, [r5apex.dxvk-cache file](https://github.com/bcook254/apex-legends-cache/blob/main/r5apex.dxvk-cache), or this [direct link](https://github.com/bcook254/apex-legends-cache/raw/main/r5apex.dxvk-cache).
 
 Next, copy your __local cache file__ in to the same folder that contains that cache file you downloaded. Assuming you are using the command line and are currently working out of said folder it might look something like this.
@@ -57,6 +37,9 @@ Merge the __downloaded cache file__ with your __local cache file__. Building off
 Upload the `output.dxvk-cache` generated file to your preferred location and make a publicly accessible link for it.
 
 Open up an issue, making sure to use the __Cache File Entry__ issue template. You can also use this link, [Cache File Entry](https://github.com/bcook254/apex-legends-cache/issues/new?assignees=&labels=cache-entry&template=cache-file-entry.md&title=). __Please fill out the entire template! It makes it that much easier for me.__ ⚠️ The final number of entries added may change if a previous cache entry must be merged before merging your cache entry ⚠️
+
+### Pull Requests
+Contributors may still create pull request as described in earlier versions of this document, but it will no longer be the _preferred_ method. This method led to a lot of merge conflicts at the beginning of each map change as multiple people contribute to the project.
 
 ## Contributions
 ### Other Projects
