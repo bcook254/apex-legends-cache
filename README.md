@@ -77,6 +77,8 @@ Contributors may still create pull request as described in earlier versions of t
 [@xPakrikx](https://github.com/xPakrikx) - 1336 entries  
 [@maxxnino](https://github.com/maxxnino) - 558 entries  
 [@bagusnl](https://github.com/bagusnl) - 45 entries  
+[@Enluka](https://github.com/Enluka) - 35 entries  
+
 ## Thank You!
 This would not be possible without everyone who originally contributed to this file when Apex Legends first supported Linux and could not continue to be possible without each contribution and user from the community.
 
