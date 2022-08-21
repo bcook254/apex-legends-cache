@@ -15,7 +15,7 @@ View the [r5apex.dxvk-cache file](https://github.com/bcook254/apex-legends-cache
 
 You could also clone this repository to your local machine and either manually or automatically pull each update and copy your local repository files to the same location listed above. This does require installing and setting up git and git-lfs for which there are many guides available online.
 
-Finally, Apex Legends __SHOULD__ be using a Proton compatibility tool that uses __dxvk 1.10.3 or later__. The current cache file uses v15 and no attempts will be made to support earlier versions. As of Aug 10, 2022, _Proton Experimental_ and _GE-Proton7-27_ or later are fully compatible.
+Finally, Apex Legends __MUST__ be using a Proton compatibility tool that uses __dxvk state cache file version 15__. The current cache file uses v15 and no attempts will be made to support earlier versions. As of Aug 10, 2022, __Proton Experimental__ and __GE-Proton7-27__ or later are fully compatible.
 
 ## Contributing cache files
 As this is a new project, I am open to new ideas on how we can make this process easier and faster for contributors and maintainers. If you would like to propose new ideas or start a discussion around this, please open an issue.
