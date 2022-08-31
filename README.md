@@ -11,6 +11,15 @@ Instead of each player having to drop in multiple times with unplayable renderin
 This effort was originally started by [u/ryao](https://www.reddit.com/user/ryao/) in this [r/linux\_gaming thread](https://www.reddit.com/r/linux_gaming/comments/t5xrho/dxvk_state_cache_for_fixing_stutter_in_apex/). This thread worked well for a while but will eventually get lost in the history of the subreddit and may not be easy to find, especially for new players. Additionally, the history of the cache file is not readily available and cannot be quickly reverted in the event of a bad merge. This repository will also add more transparency to each merge, make it easier to give credit to each contributed, and can be more easily forked/transferred should I or any future maintainers decide to stop working on this project.
 
 ## Using this file
+
+### Single-line installation
+
+This single line will download the cache, and save it into the default directory. Missing folders and such will be created.
+
+`curl --create-dirs -L -O --output-dir ~/.local/share/Steam/steamapps/shadercache/1172470/DXVK_state_cache/ https://github.com/bcook254/apex-legends-cache/raw/main/r5apex.dxvk-cache`
+
+### Manual installation
+
 View the [r5apex.dxvk-cache file](https://github.com/bcook254/apex-legends-cache/blob/main/r5apex.dxvk-cache) in this repository and click the Download button in the top right hand corner. You can also use [this link](https://github.com/bcook254/apex-legends-cache/raw/main/r5apex.dxvk-cache) to directly download the file to your computer. Copy the downloaded file to your Apex Legends shadercache folder located at `/path/to/steamapps/shadercache/1172470/DXVK_state_cache/r5apex.dxvk-cache`. By default this location is `~/.local/share/Steam/steamapps/shadercache/1172470/DXVK_state_cache/r5apex.dxvk-cache`.
 
 You could also clone this repository to your local machine and either manually or automatically pull each update and copy your local repository files to the same location listed above. This does require installing and setting up git and git-lfs for which there are many guides available online.
