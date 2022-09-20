@@ -18,7 +18,15 @@ Apex Legends __MUST__ be using a Proton compatibility tool that uses __dxvk stat
 
 This single line will download the cache, and save it in the default Apex Legends state cache directory.
 
-`curl -LO --output-dir ~/.local/share/Steam/steamapps/shadercache/1172470/DXVK_state_cache/ https://github.com/bcook254/apex-legends-cache/raw/main/r5apex.dxvk-cache`
+```sh
+curl -LO --output-dir ~/.local/share/Steam/steamapps/shadercache/1172470/DXVK_state_cache/ https://github.com/bcook254/apex-legends-cache/raw/main/r5apex.dxvk-cache`
+```
+
+Or if you're using flatpak
+
+```sh
+curl -LO --output-dir ~/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/shadercache/1172470/DXVK_state_cache/ https://github.com/bcook254/apex-legends-cache/raw/main/r5apex.dxvk-cache
+```
 
 If the output location does not exist, curl will display an error letting you know that the folder does not exist. This is most likely due to your state cache folder being in a different location. If your state cache folder is in a non-default location, you must change the `--output-dir` option and re-run the command.
 
