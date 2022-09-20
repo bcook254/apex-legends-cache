@@ -19,7 +19,7 @@ Apex Legends __MUST__ be using a Proton compatibility tool that uses __dxvk stat
 This single line will download the cache, and save it in the default Apex Legends state cache directory.
 
 ```sh
-curl -LO --output-dir ~/.local/share/Steam/steamapps/shadercache/1172470/DXVK_state_cache/ https://github.com/bcook254/apex-legends-cache/raw/main/r5apex.dxvk-cache`
+curl -LO --output-dir ~/.local/share/Steam/steamapps/shadercache/1172470/DXVK_state_cache/ https://github.com/bcook254/apex-legends-cache/raw/main/r5apex.dxvk-cache
 ```
 
 Or if you're using flatpak
