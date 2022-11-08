@@ -96,6 +96,7 @@ Contributors may still create pull request as described in earlier versions of t
 [Whom](https://blithefem.me) - 12845 entries  
 [@NotTheTime](https://github.com/NotTheTime) - 5 entries  
 [@SohamMalakar](https://github.com/SohamMalakar) - 814 entries  
+[@RMED24](https://github.com/RMED24) - 845 entries  
 
 ## Thank You!
 This would not be possible without everyone who originally contributed to this file when Apex Legends first supported Linux and could not continue to be possible without each contribution and user from the community.
