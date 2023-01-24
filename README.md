@@ -1,5 +1,8 @@
 # apex-legends-cache
 
+## ⚠️ Deprecation Notice
+Since the release of DXVK 2.0, the Nvidia 525 driver, and the work done in Mesa on the GPL, the necessity of state cache file has been almost entirely elimited. There have been no contributions to this file since late Oct to early Nov 2022. Because of this, I will no longer be actively maintaining a cache file for others to use. At the start of Apex Season 16 this repo will be archived. Thank you to everyone who contributed entries and helped make Apex Legends a great experience on Linux.
+
 ## What does this file do?
 The first time a new player on Linux tries to play Apex Legends it can be a horrible experience. From occasional stuttering when a new shader is cached, to complete freezes and crashes as hundred or thousands of new shaders a processed. These problems also plague long time Apex Legends on Linux players as each new map update has a huge impact on game performance requiring re-rendering of shaders. This repository will hopefully become a large community effort to make Apex Legends on Linux a smooth and enjoyable experience for everyone.
 
